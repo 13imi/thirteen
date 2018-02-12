@@ -1,0 +1,41 @@
+/* base */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $gray-back;
+  color: $font-sentense;
+  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.wrap {
+  padding-top: 70px;
+}
+
+a {
+  color: $main3;
+  text-decoration: underline;
+
+  &:hover {
+    color: $main3;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  color: $font-zero;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $font-main;
+}
+
+p {
+  line-height: 1.7;
+}

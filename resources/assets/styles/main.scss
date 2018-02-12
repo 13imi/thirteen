@@ -10,12 +10,15 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~font-awesome/scss/font-awesome";
 
 /** Import theme styles */
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
+@import "components/widgets";
+@import "components/blockquote";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
@@ -23,3 +26,37 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+.col-card {
+  background-color: #fff;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .col-card {
+    margin-bottom: 10px;
+  }
+}
+
+/* post */
+.post {
+  h1 { font-size: 2rem; }
+
+  h2 {
+    font-size: 1.6rem;
+    padding: 0.5em; /* 文字周りの余白 */
+    background: $main2; /* 背景色 */
+    border-left: solid 5px $main; /* 左線（実線 太さ 色） */
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    padding: 0.3em; /* 文字周りの余白 */
+    border-left: solid 5px $main; /* 左線（実線 太さ 色） */
+  }
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 10px;
+}

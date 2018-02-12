@@ -1,0 +1,43 @@
+.sidebar {
+  .widget {
+    margin: 0 0 2em 0;
+    background: #fff;
+    // border-radius: 2px;
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+
+    h3 {
+      font-size: 1em;
+      background: $main;
+      padding: 7px;
+      text-align: left;
+      color: #fff;
+      // font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .recent-posts-extended {
+    .rpwe-block .rpwe-ul .rpwe-li {
+      border-bottom: dotted 1px silver;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      a img {
+        margin-left: 10px;
+      }
+
+      h3 a {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .widget_categories ul {
+    @extend .ul-list;
+
+    border: none !important;
+  }
+}

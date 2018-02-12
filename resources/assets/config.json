@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/sage",
-  "devUrl": "http://fbb.local",
+  "publicPath": "/wp-content/themes/fbb",
+  "devUrl": "http://fbb.io",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
