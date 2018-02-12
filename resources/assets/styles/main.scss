@@ -21,6 +21,7 @@
 @import "components/widgets";
 @import "components/blockquote";
 @import "components/wp-classes";
+@import "components/fukidashi";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
@@ -41,10 +42,14 @@
 
 /* post */
 .post {
-  h1 { font-size: 1.8rem; }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
 
   h2 {
     font-size: 1.4rem;
+    line-height: 1.4;
     margin-bottom: 20px;
     padding: 0.5em; /* 文字周りの余白 */
     background: $main2; /* 背景色 */
@@ -53,6 +58,7 @@
 
   h3 {
     font-size: 1.2rem;
+    line-height: 1.2;
     margin-bottom: 20px;
     padding: 0.3em; /* 文字周りの余白 */
     border-left: solid 5px $main; /* 左線（実線 太さ 色） */
