@@ -2,17 +2,33 @@
   .widget {
     margin: 0 0 2em 0;
     background: #fff;
+    padding: 10px;
+
     // border-radius: 2px;
     // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
 
-    h3 {
-      font-size: 1em;
-      background: $main;
-      padding: 7px;
-      text-align: left;
-      color: #fff;
-      // font-weight: bold;
-      letter-spacing: 0.05em;
+    // h3 {
+    //   font-size: 1em;
+    //   background: $main;
+    //   padding: 7px;
+    //   text-align: left;
+    //   color: #fff;
+    //   letter-spacing: 0.05em;
+    // }
+
+    > h3 {
+      font-size: 1rem;
+      border-bottom: solid 2px $main2;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: " ";
+        display: block;
+        border-bottom: solid 2px $main;
+        bottom: -2px;
+        width: 20%;
+      }
     }
   }
 
@@ -25,11 +41,11 @@
       }
 
       a img {
-        margin-left: 10px;
+        margin-left: 0;
       }
 
       h3 a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.7;
       }
     }

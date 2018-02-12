@@ -1,5 +1,13 @@
 .content-info {
-  margin-top: 50px;
-  padding: 48px 0 24px 0;
+  // margin-top: 50px;
+  padding: 12px 0 12px 0;
+  height: 50px;
   background-color: $font-sentense;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+  }
 }

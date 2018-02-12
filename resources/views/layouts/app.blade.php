@@ -29,6 +29,7 @@
           @endif
         </div>
       </div>
+      <div class="push"></div>
     </div>
     @php(do_action('get_footer'))
     @include('partials.footer')
