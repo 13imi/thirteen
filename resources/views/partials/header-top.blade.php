@@ -15,7 +15,7 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <img src="@asset('images/icon_FBBLIFE_hero.png')">
+    <img src="@asset('images/icon-white2.png')">
     <p class="lead">Finnish Baby Boxでもっとらくらく楽しい子育てライフ</p>
   </div>
 </div>
@@ -24,7 +24,7 @@
   <div class="container">
     <ul class="nav nav-fill fbb-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Finnish Baby Boxって？tesuto </a>
+        <a class="nav-link active" href="#">Finnish Baby Boxって？</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">購入方法</a>
