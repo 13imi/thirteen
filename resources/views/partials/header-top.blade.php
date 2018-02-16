@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="logo">
       <a class="brand" href="{{ home_url('/') }}">
-        <img src="@asset('images/icon_FBBLIFE.png')">
+        <img src="@asset('images/babybox-life.png')">
                   </a>
                   </div>
                   <nav class="nav-primary">
@@ -15,8 +15,8 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <img src="@asset('images/icon-white2.png')">
-    <p class="lead">Finnish Baby Boxでもっとらくらく楽しい子育てライフ</p>
+    <img src="@asset('images/babybox-life-square.png')">
+    <p class="lead">フィンランドベイビーボックスで<br/>らくらく楽しく出産・新生児準備！</p>
   </div>
 </div>
 
