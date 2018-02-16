@@ -68,7 +68,7 @@
   }
 }
 
-.entry-content {
+.main {
   .ul-box {
     @extend .ul-list;
   }
@@ -109,13 +109,22 @@
 
 .entry-category ul {
   list-style: none;
-  margin: -20px 0 0 0;
+  margin: -15px 0 0 0;
   padding: 0;
+  color: $gray-border;
+
+  li::before {
+    content: "#";
+  }
 
   a {
     text-decoration: none;
-    color: $font-sub;
     font-size: 0.8rem;
+    color: $gray-border;
+
+    &:hover {
+      color: $font-sub;
+    }
   }
 }
 

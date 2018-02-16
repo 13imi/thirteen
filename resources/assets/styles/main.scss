@@ -28,6 +28,7 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/navbar";
 
 .col-card {
   background-color: #fff;
@@ -36,12 +37,12 @@
 
 @media only screen and (max-width: 992px) {
   .col-card {
-    margin-bottom: 10px;
+    margin-bottom: 2em;
   }
 }
 
 /* post */
-.post {
+.main {
   h1 {
     font-size: 1.6rem;
     line-height: 1.6;

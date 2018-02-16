@@ -3,8 +3,19 @@ header.banner {
   height: 50px;
   width: 100%;
   position: fixed;
-  box-shadow: 0 1px 1px rgba(17, 17, 17, 0.1);
   z-index: 1000;
+
+  .container-fluid {
+    box-shadow: 0 1px 1px rgba(17, 17, 17, 0.1);
+  }
+}
+
+.banner.scroll-fade-in {
+  opacity: 0;
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
 }
 
 .banner {
