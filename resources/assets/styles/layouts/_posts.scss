@@ -4,7 +4,7 @@
 
 // ul
 .ul-list {
-  border: solid 2px skyblue;
+  border: solid 2px $main;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -19,14 +19,14 @@
       content: "\f138";
       position: absolute;
       left: 1em;
-      color: skyblue;
+      color: $main;
     }
   }
 }
 
 // ol
 .ol-list {
-  border: solid 2px skyblue;
+  border: solid 2px $main;
   border-radius: 5px;
   padding: 0.5em;
   counter-reset: number;

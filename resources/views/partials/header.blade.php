@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="logo">
       <a class="brand" href="{{ home_url('/') }}">
-        <img src="@asset('images/icon_FBBLIFE.png')">
+        <img src="@asset('images/babybox-life.png')">
                   </a>
                   </div>
                   <nav class="nav-primary">
@@ -12,22 +12,24 @@
     </nav>
     </div>
     <div class="nav-tabs-wrap">
-      <ul class="nav nav-fill fbb-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Finnish Baby Boxって？</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">購入方法</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">メリット</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">デメリット</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">レビュー</a>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="nav nav-fill fbb-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Finnish Baby Boxって？</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">購入方法</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">メリット</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">デメリット</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">レビュー</a>
+          </li>
+        </ul>
+      </div>
     </div>
 </header>
