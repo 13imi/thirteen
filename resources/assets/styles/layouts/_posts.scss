@@ -73,11 +73,11 @@
     margin-bottom: 50px;
   }
 
-  .ul-box {
+  ul {
     @extend .ul-list;
   }
 
-  .ol-box {
+  ol {
     @extend .ol-list;
   }
 }

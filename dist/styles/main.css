@@ -14422,7 +14422,7 @@ header.banner .container-fluid {
 
 .ul-list,
 .sidebar .widget_categories ul,
-.main .ul-box {
+.main ul {
   border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
@@ -14431,7 +14431,7 @@ header.banner .container-fluid {
 
 .ul-list li,
 .sidebar .widget_categories ul li,
-.main .ul-box li {
+.main ul li {
   line-height: 1.5;
   padding: 0.5em 0;
   list-style-type: none !important;
@@ -14439,7 +14439,7 @@ header.banner .container-fluid {
 
 .ul-list li::before,
 .sidebar .widget_categories ul li::before,
-.main .ul-box li::before {
+.main ul li::before {
   font-family: FontAwesome, sans-serif;
   content: "\F138";
   position: absolute;
@@ -14448,7 +14448,7 @@ header.banner .container-fluid {
 }
 
 .ol-list,
-.main .ol-box {
+.main ol {
   border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em;
@@ -14457,14 +14457,14 @@ header.banner .container-fluid {
 }
 
 .ol-list li,
-.main .ol-box li {
+.main ol li {
   position: relative;
   line-height: 1.5em;
   padding: 0.5em 0.5em 0.5em 30px;
 }
 
 .ol-list li::before,
-.main .ol-box li::before {
+.main ol li::before {
   /* 以下数字をつける */
   position: absolute;
   counter-increment: number;
