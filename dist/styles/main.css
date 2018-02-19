@@ -13975,7 +13975,7 @@ body {
   background-color: #f3f3f3;
   color: #555;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -13985,7 +13985,7 @@ body {
 }
 
 .wrap {
-  padding-top: 105px;
+  padding-top: 85px;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -14041,15 +14041,13 @@ p {
 .jumbotron {
   margin-bottom: 0;
   text-align: center;
-  background-image: url(/wp-content/themes/fbb/dist/images/top-img2.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: url(/wp-content/themes/fbb/dist/images/top-img2.jpg) center center no-repeat #464646;
   background-size: cover;
-  background-color: #464646;
+  background-color: #31ccfd;
 }
 
 .jumbotron p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: white;
   font-weight: 500;
 }
@@ -14059,7 +14057,7 @@ p {
 }
 
 .content {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .content a img:hover {
@@ -14335,7 +14333,7 @@ blockquote cite {
 
 header.banner {
   background-color: white;
-  height: 50px;
+  height: 40px;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -14360,7 +14358,7 @@ header.banner .container-fluid {
 
 .banner .logo img {
   margin-top: 5px;
-  height: 45px;
+  height: 35px;
 }
 
 .sidebar .widget {
@@ -14397,7 +14395,7 @@ header.banner .container-fluid {
 }
 
 .sidebar .recent-posts-extended .rpwe-block .rpwe-ul .rpwe-li h3 a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -14425,7 +14423,7 @@ header.banner .container-fluid {
 .ul-list,
 .sidebar .widget_categories ul,
 .main .ul-box {
-  border: solid 2px skyblue;
+  border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -14446,12 +14444,12 @@ header.banner .container-fluid {
   content: "\F138";
   position: absolute;
   left: 1em;
-  color: skyblue;
+  color: #31ccfd;
 }
 
 .ol-list,
 .main .ol-box {
-  border: solid 2px skyblue;
+  border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em;
   counter-reset: number;
@@ -14489,6 +14487,10 @@ header.banner .container-fluid {
   -webkit-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.main .page-header {
+  margin-bottom: 50px;
 }
 
 .box {
@@ -14620,13 +14622,13 @@ body#tinymce {
   position: -webkit-sticky;
   /* safari対応 */
   position: sticky;
-  top: 50px;
+  top: 40px;
   /* 上端から10pxのところで固定 */
 }
 
 .col-card {
   background-color: #fff;
-  padding: 25px;
+  padding: 50px;
 }
 
 @media only screen and (max-width: 992px) {
