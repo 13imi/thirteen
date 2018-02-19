@@ -13985,7 +13985,7 @@ body {
 }
 
 .wrap {
-  padding-top: 85px;
+  padding-top: 105px;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -14041,9 +14041,11 @@ p {
 .jumbotron {
   margin-bottom: 0;
   text-align: center;
-  background: url(/wp-content/themes/fbb/dist/images/top-img2.jpg) center center no-repeat #464646;
+  background-image: url(/wp-content/themes/fbb/dist/images/top-img2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #31ccfd;
+  background-color: #464646;
 }
 
 .jumbotron p {
@@ -14057,7 +14059,7 @@ p {
 }
 
 .content {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .content a img:hover {
@@ -14333,7 +14335,7 @@ blockquote cite {
 
 header.banner {
   background-color: white;
-  height: 40px;
+  height: 50px;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -14358,7 +14360,7 @@ header.banner .container-fluid {
 
 .banner .logo img {
   margin-top: 5px;
-  height: 35px;
+  height: 45px;
 }
 
 .sidebar .widget {
@@ -14395,7 +14397,7 @@ header.banner .container-fluid {
 }
 
 .sidebar .recent-posts-extended .rpwe-block .rpwe-ul .rpwe-li h3 a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.7;
 }
 
@@ -14423,7 +14425,7 @@ header.banner .container-fluid {
 .ul-list,
 .sidebar .widget_categories ul,
 .main .ul-box {
-  border: solid 2px #31ccfd;
+  border: solid 2px skyblue;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -14444,12 +14446,12 @@ header.banner .container-fluid {
   content: "\F138";
   position: absolute;
   left: 1em;
-  color: #31ccfd;
+  color: skyblue;
 }
 
 .ol-list,
 .main .ol-box {
-  border: solid 2px #31ccfd;
+  border: solid 2px skyblue;
   border-radius: 5px;
   padding: 0.5em;
   counter-reset: number;
@@ -14618,7 +14620,7 @@ body#tinymce {
   position: -webkit-sticky;
   /* safari対応 */
   position: sticky;
-  top: 40px;
+  top: 50px;
   /* 上端から10pxのところで固定 */
 }
 

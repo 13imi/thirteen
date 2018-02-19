@@ -69,6 +69,10 @@
 }
 
 .main {
+  .page-header {
+    margin-bottom: 50px;
+  }
+
   .ul-box {
     @extend .ul-list;
   }
