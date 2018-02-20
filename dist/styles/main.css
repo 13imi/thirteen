@@ -14036,6 +14036,7 @@ h6 {
 
 p {
   line-height: 1.7;
+  margin-bottom: 20px;
 }
 
 .jumbotron {
@@ -14076,7 +14077,6 @@ p {
   background-color: #ffc107;
   color: #fff;
   font-size: 1em;
-  height: 40px;
   width: 100%;
   text-align: center;
   line-height: 1;
@@ -14493,6 +14493,10 @@ header.banner .container-fluid {
   margin-bottom: 50px;
 }
 
+.main img .alignnone {
+  width: 100%;
+}
+
 .box {
   position: relative;
   margin: 2em 0;
@@ -14634,6 +14638,7 @@ body#tinymce {
 @media only screen and (max-width: 992px) {
   .col-card {
     margin-bottom: 2em;
+    padding: 25px;
   }
 }
 
@@ -14642,11 +14647,13 @@ body#tinymce {
 .main h1 {
   font-size: 1.6rem;
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .main h2 {
   font-size: 1.4rem;
   line-height: 1.4;
+  margin-top: 50px;
   margin-bottom: 20px;
   padding: 0.5em;
   /* 文字周りの余白 */
@@ -14654,11 +14661,13 @@ body#tinymce {
   /* 背景色 */
   border-left: solid 5px #31ccfd;
   /* 左線（実線 太さ 色） */
+  font-weight: 600;
 }
 
 .main h3 {
   font-size: 1.2rem;
   line-height: 1.2;
+  margin-top: 30px;
   margin-bottom: 20px;
   padding: 0.3em;
   /* 文字周りの余白 */

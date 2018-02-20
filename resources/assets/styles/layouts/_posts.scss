@@ -80,6 +80,10 @@
   ol {
     @extend .ol-list;
   }
+
+  img .alignnone {
+    width: 100%;
+  }
 }
 
 .box {
