@@ -14493,8 +14493,16 @@ header.banner .container-fluid {
   margin-bottom: 50px;
 }
 
-.main img .alignnone {
+.main img.alignnone {
   width: 100%;
+}
+
+.main span.red {
+  color: #f26964;
+}
+
+.main span.blue {
+  color: #0e7ac4;
 }
 
 .box {

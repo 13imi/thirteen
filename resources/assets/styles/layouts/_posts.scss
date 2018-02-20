@@ -81,8 +81,16 @@
     @extend .ol-list;
   }
 
-  img .alignnone {
+  img.alignnone {
     width: 100%;
+  }
+
+  span.red {
+    color: $font-red;
+  }
+
+  span.blue {
+    color: $font-blue;
   }
 }
 
