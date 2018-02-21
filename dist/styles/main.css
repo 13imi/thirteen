@@ -14493,7 +14493,11 @@ header.banner .container-fluid {
   margin-bottom: 50px;
 }
 
-.main img {
+.main img.alignnone {
+  width: 100%;
+}
+
+.main .width-100 img {
   width: 100%;
 }
 

@@ -81,7 +81,11 @@
     @extend .ol-list;
   }
 
-  img {
+  img.alignnone {
+    width: 100%;
+  }
+
+  .width-100 img {
     width: 100%;
   }
 
