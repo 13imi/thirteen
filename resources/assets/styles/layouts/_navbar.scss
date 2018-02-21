@@ -10,10 +10,10 @@
   &::-webkit-scrollbar-thumb { background: #2cc2e4; }
 
   .fbb-nav {
-    height: 35px;
+    height: 40px;
     display: inline-block;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     li {
       display: inline-block;
@@ -21,7 +21,7 @@
 
       a {
         text-decoration: none;
-        padding: 0.5rem 0.5rem;
+        padding: 0.6rem 0.5rem;
       }
     }
   }

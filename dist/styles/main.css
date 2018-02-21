@@ -13971,6 +13971,12 @@ html {
   min-height: 100%;
 }
 
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 body {
   background-color: #f3f3f3;
   color: #555;
@@ -14072,6 +14078,11 @@ p {
   transition: all 0.3s;
 }
 
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .square_btn {
   display: inline-block;
   background-color: #ffc107;
@@ -14079,7 +14090,7 @@ p {
   font-size: 1em;
   width: 100%;
   text-align: center;
-  line-height: 1;
+  line-height: 1.7;
   text-decoration: none;
   letter-spacing: 0.05em;
   padding: 0.7em 1em;
@@ -14101,7 +14112,9 @@ p {
 
 .line_btn {
   display: inline-block;
-  padding: 0.3em 1em;
+  padding: 0.7em 1em;
+  font-size: 1rem;
+  line-height: 1.7;
   text-decoration: none;
   width: 100%;
   text-align: center;
@@ -14382,6 +14395,22 @@ header.banner .container-fluid {
   width: 20%;
 }
 
+.sidebar .widget .custom-html-widget {
+  padding: 15px;
+}
+
+.sidebar .widget .custom-html-widget img {
+  width: 100%;
+}
+
+.sidebar .widget .custom-html-widget p {
+  margin-top: 10px;
+}
+
+.sidebar .widget.widget_media_image img {
+  width: 100%;
+}
+
 .sidebar .recent-posts-extended .rpwe-block .rpwe-ul .rpwe-li {
   border-bottom: dotted 1px silver;
 }
@@ -14422,7 +14451,7 @@ header.banner .container-fluid {
 
 .ul-list,
 .sidebar .widget_categories ul,
-.main ul {
+.main .ul-box ul {
   border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
@@ -14431,7 +14460,7 @@ header.banner .container-fluid {
 
 .ul-list li,
 .sidebar .widget_categories ul li,
-.main ul li {
+.main .ul-box ul li {
   line-height: 1.5;
   padding: 0.5em 0;
   list-style-type: none !important;
@@ -14439,7 +14468,7 @@ header.banner .container-fluid {
 
 .ul-list li::before,
 .sidebar .widget_categories ul li::before,
-.main ul li::before {
+.main .ul-box ul li::before {
   font-family: FontAwesome, sans-serif;
   content: "\F138";
   position: absolute;
@@ -14448,7 +14477,7 @@ header.banner .container-fluid {
 }
 
 .ol-list,
-.main ol {
+.main .ol-box ol {
   border: solid 2px #31ccfd;
   border-radius: 5px;
   padding: 0.5em;
@@ -14457,14 +14486,14 @@ header.banner .container-fluid {
 }
 
 .ol-list li,
-.main ol li {
+.main .ol-box ol li {
   position: relative;
   line-height: 1.5em;
   padding: 0.5em 0.5em 0.5em 30px;
 }
 
 .ol-list li::before,
-.main ol li::before {
+.main .ol-box ol li::before {
   /* 以下数字をつける */
   position: absolute;
   counter-increment: number;
@@ -14487,6 +14516,31 @@ header.banner .container-fluid {
   -webkit-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.entry-category {
+  margin: 0 0 15px 0;
+}
+
+.entry-category ul {
+  list-style: none;
+  margin: -15px 0 0 0;
+  padding: 0;
+  color: #d3d3d3;
+}
+
+.entry-category ul li::before {
+  content: "#";
+}
+
+.entry-category ul a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #d3d3d3;
+}
+
+.entry-category ul a:hover {
+  color: #666;
 }
 
 .main .page-header {
@@ -14536,27 +14590,6 @@ header.banner .container-fluid {
 .box p {
   margin: 0;
   padding: 0;
-}
-
-.entry-category ul {
-  list-style: none;
-  margin: -15px 0 0 0;
-  padding: 0;
-  color: #d3d3d3;
-}
-
-.entry-category ul li::before {
-  content: "#";
-}
-
-.entry-category ul a {
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: #d3d3d3;
-}
-
-.entry-category ul a:hover {
-  color: #666;
 }
 
 #toc_container ul a {
@@ -14618,10 +14651,10 @@ body#tinymce {
 }
 
 .nav-tabs-wrap .fbb-nav {
-  height: 35px;
+  height: 40px;
   display: inline-block;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .nav-tabs-wrap .fbb-nav li {
@@ -14631,7 +14664,7 @@ body#tinymce {
 
 .nav-tabs-wrap .fbb-nav li a {
   text-decoration: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0.6rem 0.5rem;
 }
 
 .home .nav-tabs-wrap {
@@ -14650,7 +14683,7 @@ body#tinymce {
 @media only screen and (max-width: 992px) {
   .col-card {
     margin-bottom: 2em;
-    padding: 25px;
+    padding: 25px 20px;
   }
 }
 
@@ -14678,6 +14711,7 @@ body#tinymce {
 
 .main h3 {
   font-size: 1.2rem;
+  font-weight: 600;
   line-height: 1.2;
   margin-top: 30px;
   margin-bottom: 20px;

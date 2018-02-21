@@ -30,6 +30,24 @@
         width: 20%;
       }
     }
+
+    .custom-html-widget {
+      padding: 15px;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+    }
+
+    &.widget_media_image {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .recent-posts-extended {
