@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);@charset "UTF-8";
 
-/** Import Bootstrap functions */
+/* Import Bootstrap functions */
 
 /** Import everything from autoload */
 
@@ -14493,7 +14493,7 @@ header.banner .container-fluid {
   margin-bottom: 50px;
 }
 
-.main img.alignnone {
+.main img {
   width: 100%;
 }
 
