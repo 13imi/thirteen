@@ -13991,7 +13991,7 @@ body {
 }
 
 .wrap {
-  padding-top: 85px;
+  padding-top: 95px;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -14713,7 +14713,7 @@ body#tinymce {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
   padding: 0.3em;
   /* 文字周りの余白 */
