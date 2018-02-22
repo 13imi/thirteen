@@ -14000,13 +14000,13 @@ body {
   padding-top: 30px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .home .wrap {
     padding-top: 0;
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .main,
   .sidebar {
     padding: 0;
@@ -14243,8 +14243,8 @@ blockquote cite {
   padding: 20px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  -webkit-box-shadow: 1px 1px 1px #aaa;
-          box-shadow: 1px 1px 1px #aaa;
+  -webkit-box-shadow: 1px 1px 1px #ddd;
+          box-shadow: 1px 1px 1px #ddd;
   background-color: #fff;
   z-index: 1;
 }
@@ -14292,12 +14292,9 @@ blockquote cite {
   height: 80px;
   top: -10px;
   border-radius: 40px;
-  border: 3px solid #fff;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 1px 1px 1px #aaa;
-          box-shadow: 1px 1px 1px #aaa;
 }
 
 .main .l-fuki::after {
@@ -14342,6 +14339,14 @@ blockquote cite {
 
 .icon-13::after {
   background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/r/rians1mi/20180205/20180205131823.jpg?1517804357");
+}
+
+.icon-srkm::after {
+  background-image: url(/wp-content/themes/fbb/dist/images/icon_shirokuma.png);
+}
+
+.icon-empn::after {
+  background-image: url(/wp-content/themes/fbb/dist/images/icon_empen.png);
 }
 
 header.banner {
@@ -14553,6 +14558,11 @@ header.banner .container-fluid {
 
 .main .width-100 img {
   width: 100%;
+}
+
+.main .width-80 img {
+  width: 80%;
+  text-align: center;
 }
 
 .main span.red {
