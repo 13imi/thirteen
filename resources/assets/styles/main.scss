@@ -47,7 +47,7 @@
   h1 {
     font-size: 1.6rem;
     line-height: 1.6;
-    font-weight: 600;
+    font-weight: bolder;
   }
 
   h2 {
@@ -58,12 +58,12 @@
     padding: 0.5em; /* 文字周りの余白 */
     background: $main2; /* 背景色 */
     border-left: solid 5px $main; /* 左線（実線 太さ 色） */
-    font-weight: 600;
+    font-weight: bolder;
   }
 
   h3 {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: bolder;
     line-height: 1.2;
     margin-top: 50px;
     margin-bottom: 20px;

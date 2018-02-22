@@ -70,26 +70,36 @@
     left: -110px;
   }
 
+  @media screen and (max-width: 992px) {
+    .l-fuki::after {
+      right: -90px;
+    }
+
+    .r-fuki::after {
+      left: -90px;
+    }
+  }
+
   @media screen and (max-width: 620px) {
     .l-fuki,
     .r-fuki {
-      width: 70%;
+      width: 80%;
     }
 
     .l-fuki {
-      margin-right: 30%;
+      margin-right: 20%;
     }
 
     .r-fuki {
-      margin-left: 30%;
+      margin-left: 20%;
     }
   }
 
   @media screen and (max-width: 478px) {
     .l-fuki::after,
     .r-fuki::after {
-      width: 60px;
-      height: 60px;
+      width: 70px;
+      height: 70px;
       border-radius: 30px;
     }
 

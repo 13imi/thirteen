@@ -16,7 +16,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <img src="@asset('images/babybox-life-square.png')">
-    <p class="lead">フィンランドベイビーボックスで<br/>らくらく楽しく出産・新生児準備！</p>
+              <p class="lead">フィンランドベイビーボックスで<br/>出産・新生児準備をもっと楽しい思い出に！</p>
   </div>
 </div>
 

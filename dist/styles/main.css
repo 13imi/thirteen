@@ -14305,26 +14305,36 @@ blockquote cite {
   left: -110px;
 }
 
+@media screen and (max-width: 992px) {
+  .main .l-fuki::after {
+    right: -90px;
+  }
+
+  .main .r-fuki::after {
+    left: -90px;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .main .l-fuki,
   .main .r-fuki {
-    width: 70%;
+    width: 80%;
   }
 
   .main .l-fuki {
-    margin-right: 30%;
+    margin-right: 20%;
   }
 
   .main .r-fuki {
-    margin-left: 30%;
+    margin-left: 20%;
   }
 }
 
 @media screen and (max-width: 478px) {
   .main .l-fuki::after,
   .main .r-fuki::after {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 30px;
   }
 
@@ -14702,7 +14712,7 @@ body#tinymce {
 .main h1 {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: bolder;
 }
 
 .main h2 {
@@ -14716,12 +14726,12 @@ body#tinymce {
   /* 背景色 */
   border-left: solid 5px #31ccfd;
   /* 左線（実線 太さ 色） */
-  font-weight: 600;
+  font-weight: bolder;
 }
 
 .main h3 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bolder;
   line-height: 1.2;
   margin-top: 50px;
   margin-bottom: 20px;
