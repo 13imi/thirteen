@@ -55,9 +55,9 @@
     line-height: 1.4;
     margin-top: 50px;
     margin-bottom: 20px;
-    padding: 0.5em; /* 文字周りの余白 */
-    background: $main2; /* 背景色 */
-    border-left: solid 5px $main; /* 左線（実線 太さ 色） */
+    padding: 0.7em 0.5em;
+    border-top: 1px $main solid;
+    border-bottom: 1px $main solid;
     font-weight: bolder;
   }
 

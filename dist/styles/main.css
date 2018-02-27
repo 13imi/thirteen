@@ -10893,8 +10893,8 @@ a.text-dark:focus {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_674f50d2.eot);
-  src: url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_674f50d2.eot) format("embedded-opentype"), url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_af7ae505.woff2) format("woff2"), url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_fee66e71.woff) format("woff"), url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_b06871f2.ttf) format("truetype"), url(/wp-content/themes/fbb/dist/vendor/fontawesome-webfont_912ec66d.svg) format("svg");
+  src: url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_674f50d2.eot);
+  src: url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_674f50d2.eot) format("embedded-opentype"), url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_af7ae505.woff2) format("woff2"), url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_fee66e71.woff) format("woff"), url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_b06871f2.ttf) format("truetype"), url(/wp-content/themes/thirteen/dist/vendor/fontawesome-webfont_912ec66d.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13978,7 +13978,7 @@ html {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
   color: #555;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
@@ -13991,7 +13991,7 @@ body {
 }
 
 .wrap {
-  padding-top: 95px;
+  padding-top: 20px;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -14019,13 +14019,13 @@ body {
 }
 
 a {
-  color: #56c2f6;
-  text-decoration: underline;
+  color: #00081a;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #56c2f6;
-  text-decoration: none;
+  color: #666;
+  text-decoration: underline;
 }
 
 h1 {
@@ -14048,15 +14048,14 @@ p {
 .jumbotron {
   margin-bottom: 0;
   text-align: center;
-  background: url(/wp-content/themes/fbb/dist/images/top-img2.jpg) center center no-repeat #464646;
-  background-size: cover;
-  background-color: #31ccfd;
+  background-color: #00081a;
 }
 
 .jumbotron p {
   font-size: 1rem;
   color: white;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 .jumbotron img {
@@ -14148,7 +14147,7 @@ blockquote {
           box-sizing: border-box;
   font-style: italic;
   color: #464646;
-  background: #f3f3f3;
+  background: #f2f2f2;
 }
 
 blockquote::before {
@@ -14352,19 +14351,17 @@ blockquote cite {
 }
 
 .icon-srkm::after {
-  background-image: url(/wp-content/themes/fbb/dist/images/icon_shirokuma.png);
+  background-image: url(/wp-content/themes/thirteen/dist/images/icon_shirokuma.png);
 }
 
 .icon-empn::after {
-  background-image: url(/wp-content/themes/fbb/dist/images/icon_empen.png);
+  background-image: url(/wp-content/themes/thirteen/dist/images/icon_empen.png);
 }
 
 header.banner {
   background-color: white;
   height: 40px;
   width: 100%;
-  position: fixed;
-  z-index: 1000;
 }
 
 header.banner .container-fluid {
@@ -14385,8 +14382,12 @@ header.banner .container-fluid {
 }
 
 .banner .logo img {
-  margin-top: 5px;
-  height: 35px;
+  height: 40px;
+}
+
+.home .banner {
+  position: fixed;
+  z-index: 1000;
 }
 
 .sidebar .widget {
@@ -14397,7 +14398,7 @@ header.banner .container-fluid {
 
 .sidebar .widget > h3 {
   font-size: 1rem;
-  border-bottom: solid 2px #e8f7fe;
+  border-bottom: solid 2px #eee;
   position: relative;
 }
 
@@ -14405,7 +14406,7 @@ header.banner .container-fluid {
   position: absolute;
   content: " ";
   display: block;
-  border-bottom: solid 2px #31ccfd;
+  border-bottom: solid 2px #00081a;
   bottom: -2px;
   width: 20%;
 }
@@ -14448,10 +14449,42 @@ header.banner .container-fluid {
 }
 
 .content-info {
-  padding: 12px 0 12px 0;
-  height: 50px;
-  background-color: #555;
+  padding: 30px 0 10px 0;
+  min-height: 50px;
+  background-color: #00081a;
+  color: #fff;
   text-align: center;
+}
+
+.content-info .widget {
+  margin-bottom: 30px;
+}
+
+.content-info .widget h3 {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.content-info .widget h3::before,
+.content-info .widget h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.content-info .widget h3::before {
+  left: 0;
+}
+
+.content-info .widget h3::after {
+  right: 0;
 }
 
 .content-info a {
@@ -14467,7 +14500,7 @@ header.banner .container-fluid {
 .ul-list,
 .sidebar .widget_categories ul,
 .main .ul-box ul {
-  border: solid 2px #31ccfd;
+  border: solid 2px #00081a;
   border-radius: 5px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -14488,12 +14521,12 @@ header.banner .container-fluid {
   content: "\F138";
   position: absolute;
   left: 1em;
-  color: #31ccfd;
+  color: #00081a;
 }
 
 .ol-list,
 .main .ol-box ol {
-  border: solid 2px #31ccfd;
+  border: solid 2px #00081a;
   border-radius: 5px;
   padding: 0.5em;
   counter-reset: number;
@@ -14515,7 +14548,7 @@ header.banner .container-fluid {
   content: counter(number);
   /* 以下数字のデザイン変える */
   display: inline-block;
-  background: #31ccfd;
+  background: #00081a;
   color: white;
   font-family: 'Avenir', 'Arial Black', 'Arial', sans-serif;
   font-weight: bold;
@@ -14638,7 +14671,7 @@ header.banner .container-fluid {
   content: "\F138";
   position: absolute;
   left: 0.5em;
-  color: #31ccfd;
+  color: #00081a;
 }
 
 #toc_container .toc_list > li > a {
@@ -14654,8 +14687,10 @@ body#tinymce {
   overflow-y: none;
   overflow-x: auto;
   white-space: nowrap;
-  background-color: #e8f7fe;
+  background-color: #fff;
   z-index: 1000;
+  -webkit-box-shadow: 0 1px 1px rgba(17, 17, 17, 0.1);
+          box-shadow: 0 1px 1px rgba(17, 17, 17, 0.1);
 }
 
 .nav-tabs-wrap::-webkit-scrollbar {
@@ -14667,7 +14702,7 @@ body#tinymce {
 }
 
 .nav-tabs-wrap::-webkit-scrollbar-thumb {
-  background: #2cc2e4;
+  background: #bbb;
 }
 
 .nav-tabs-wrap .fbb-nav {
@@ -14680,11 +14715,15 @@ body#tinymce {
 .nav-tabs-wrap .fbb-nav li {
   display: inline-block;
   float: none;
+  padding: 0.7rem 0.5rem;
+}
+
+.nav-tabs-wrap .fbb-nav li:hover {
+  border-bottom: 1px solid #00081a;
 }
 
 .nav-tabs-wrap .fbb-nav li a {
   text-decoration: none;
-  padding: 0.6rem 0.5rem;
 }
 
 .home .nav-tabs-wrap {
@@ -14720,12 +14759,9 @@ body#tinymce {
   line-height: 1.4;
   margin-top: 50px;
   margin-bottom: 20px;
-  padding: 0.5em;
-  /* 文字周りの余白 */
-  background: #e8f7fe;
-  /* 背景色 */
-  border-left: solid 5px #31ccfd;
-  /* 左線（実線 太さ 色） */
+  padding: 0.7em 0.5em;
+  border-top: 1px #00081a solid;
+  border-bottom: 1px #00081a solid;
   font-weight: bolder;
 }
 
@@ -14737,7 +14773,7 @@ body#tinymce {
   margin-bottom: 20px;
   padding: 0.3em;
   /* 文字周りの余白 */
-  border-left: solid 5px #31ccfd;
+  border-left: solid 5px #00081a;
   /* 左線（実線 太さ 色） */
 }
 

@@ -1,38 +1,27 @@
-<!--[Google Tag Manager Plugin]>
-<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
-
 <header class="banner">
   <div class="container-fluid">
-    <div class="logo">
-      <a class="brand" href="{{ home_url('/') }}">
-        <img src="@asset('images/babybox-life.png')">
-                  </a>
-                  </div>
-                  <nav class="nav-primary">
-        @if (has_nav_menu('primary_navigation'))
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-        @endif
-    </nav>
-    </div>
-    <div class="nav-tabs-wrap">
-      <div class="container">
-        <ul class="nav nav-fill fbb-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Finnish Baby Boxって？</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">購入方法</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">メリット</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">デメリット</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">レビュー</a>
-          </li>
-        </ul>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="logo">
+          <a class="brand" href="{{ home_url('/') }}">
+            <img src="@asset('images/icon-13.png')">
+          </a>
+        </div>
       </div>
     </div>
+  </div>
 </header>
+
+<div class="nav-tabs-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="nav-primary">
+          @if (has_nav_menu('primary_navigation'))
+            {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-fill fbb-nav']) !!}
+          @endif
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

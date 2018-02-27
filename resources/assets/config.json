@@ -11,8 +11,8 @@
       "./scripts/scroll-fade-in.js"
     ]
   },
-  "publicPath": "/wp-content/themes/fbb",
-  "devUrl": "http://fbb.io",
+  "publicPath": "/wp-content/themes/thirteen",
+  "devUrl": "http://13imi.lo",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

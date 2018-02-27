@@ -2,8 +2,6 @@ header.banner {
   background-color: white;
   height: 40px;
   width: 100%;
-  position: fixed;
-  z-index: 1000;
 
   .container-fluid {
     box-shadow: 0 1px 1px rgba(17, 17, 17, 0.1);
@@ -33,8 +31,12 @@ header.banner {
     text-align: center;
 
     img {
-      margin-top: 5px;
-      height: 35px;
+      height: 40px;
     }
   }
+}
+
+.home .banner {
+  position: fixed;
+  z-index: 1000;
 }
