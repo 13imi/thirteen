@@ -1,8 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.top')
 
 @section('content')
-  @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
-    @include('partials.content-page')
-  @endwhile
+  <div class="entry-list">
+    <h3 class="section-title">新着記事</h3>
+    <div class="row">
+      @while(have_posts()) @php(the_post())
+        @include('partials.cards')
+      @endwhile
+    </div>
+  </div>
 @endsection

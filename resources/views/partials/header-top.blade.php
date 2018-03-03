@@ -15,7 +15,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <img src="@asset('images/icon-13w.png')">
-    <p class="lead">13imi.me<br/>めんどくさいこと スマートにサボろう</p>
+    <p class="lead">@php(bloginfo('title'))<br/>@php(bloginfo('description'))</p>
   </div>
 </div>
 

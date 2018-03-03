@@ -76,3 +76,17 @@
   font-size: 12px;
   margin-bottom: 10px;
 }
+
+.entry-list {
+  h3.section-title {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border-left: none;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0;
+  }
+}

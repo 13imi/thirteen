@@ -77,16 +77,23 @@ h6 {
 p {
   line-height: 1.7;
   margin-bottom: 20px;
+
+  code {
+    color: $font-sentense;
+    background-color: $main2;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
 }
 
 .jumbotron {
   margin-bottom: 0;
   text-align: center;
-  background-color: $main;
-  // background: url(../images/top-img2.jpg) center center no-repeat #464646;
-  // -webkit-background-size: cover;
-  // background-size: cover;
   // background-color: $main;
+  background: url(../images/bg3.png) center center no-repeat #464646;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: $main;
 
   p {
     font-size: 1rem;

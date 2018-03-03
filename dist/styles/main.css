@@ -14045,9 +14045,18 @@ p {
   margin-bottom: 20px;
 }
 
+p code {
+  color: #555;
+  background-color: #eee;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
 .jumbotron {
   margin-bottom: 0;
   text-align: center;
+  background: url(/wp-content/themes/thirteen/dist/images/bg3.png) center center no-repeat #464646;
+  background-size: cover;
   background-color: #00081a;
 }
 
@@ -14500,8 +14509,10 @@ header.banner .container-fluid {
 .ul-list,
 .sidebar .widget_categories ul,
 .main .ul-box ul {
-  border: solid 2px #00081a;
+  border: solid 2px #d3d3d3;
   border-radius: 5px;
+  margin-top: -5px;
+  margin-bottom: 40px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
 }
@@ -14521,14 +14532,16 @@ header.banner .container-fluid {
   content: "\F138";
   position: absolute;
   left: 1em;
-  color: #00081a;
+  color: #666;
 }
 
 .ol-list,
 .main .ol-box ol {
-  border: solid 2px #00081a;
+  border: solid 2px #d3d3d3;
   border-radius: 5px;
   padding: 0.5em;
+  margin-top: -5px;
+  margin-bottom: 40px;
   counter-reset: number;
   list-style-type: none !important;
 }
@@ -14548,7 +14561,7 @@ header.banner .container-fluid {
   content: counter(number);
   /* 以下数字のデザイン変える */
   display: inline-block;
-  background: #00081a;
+  background: #666;
   color: white;
   font-family: 'Avenir', 'Arial Black', 'Arial', sans-serif;
   font-weight: bold;
@@ -14566,28 +14579,37 @@ header.banner .container-fluid {
   transform: translateY(-50%);
 }
 
-.entry-category {
+.entry-content a {
+  text-decoration: underline;
+  color: #0e7ac4;
+}
+
+.entry-content a:hover {
+  text-decoration: none;
+}
+
+.entry-content .entry-category {
   margin: 0 0 15px 0;
 }
 
-.entry-category ul {
+.entry-content .entry-category ul {
   list-style: none;
   margin: -15px 0 0 0;
   padding: 0;
   color: #d3d3d3;
 }
 
-.entry-category ul li::before {
+.entry-content .entry-category ul li::before {
   content: "#";
 }
 
-.entry-category ul a {
+.entry-content .entry-category ul a {
   text-decoration: none;
   font-size: 0.8rem;
   color: #d3d3d3;
 }
 
-.entry-category ul a:hover {
+.entry-content .entry-category ul a:hover {
   color: #666;
 }
 
@@ -14679,6 +14701,18 @@ header.banner .container-fluid {
   font-size: 110%;
 }
 
+.addthis_tool {
+  text-align: right;
+}
+
+.addthis_tool.at-above-post {
+  margin: 0 0 2rem 0;
+}
+
+.addthis_tool.at-below-post {
+  margin: 0 0 2rem 0;
+}
+
 body#tinymce {
   margin: 12px !important;
 }
@@ -14706,7 +14740,7 @@ body#tinymce {
 }
 
 .nav-tabs-wrap .fbb-nav {
-  height: 40px;
+  min-height: 40px;
   display: inline-block;
   width: 100%;
   font-size: 0.9rem;
@@ -14780,6 +14814,18 @@ body#tinymce {
 .breadcrumbs {
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+.entry-list h3.section-title {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-align: center;
+  border-left: none;
+}
+
+.entry-list .card {
+  border: none;
+  border-radius: 0;
 }
 
 

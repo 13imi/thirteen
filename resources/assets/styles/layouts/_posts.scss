@@ -4,8 +4,10 @@
 
 // ul
 .ul-list {
-  border: solid 2px $main;
+  border: solid 2px $gray-border;
   border-radius: 5px;
+  margin-top: -5px;
+  margin-bottom: 40px;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
 
@@ -19,16 +21,18 @@
       content: "\f138";
       position: absolute;
       left: 1em;
-      color: $main;
+      color: $font-sub;
     }
   }
 }
 
 // ol
 .ol-list {
-  border: solid 2px $main;
+  border: solid 2px $gray-border;
   border-radius: 5px;
   padding: 0.5em;
+  margin-top: -5px;
+  margin-bottom: 40px;
   counter-reset: number;
   list-style-type: none !important;
 
@@ -45,7 +49,7 @@
 
       /* 以下数字のデザイン変える */
       display: inline-block;
-      background: $main;
+      background: $font-sub;
       color: white;
       font-family: 'Avenir', 'Arial Black', 'Arial', sans-serif;
       font-weight: bold;
@@ -68,26 +72,37 @@
   }
 }
 
-.entry-category {
-  margin: 0 0 15px 0;
+.entry-content {
+  a {
+    text-decoration: underline;
+    color: $font-blue;
 
-  ul {
-    list-style: none;
-    margin: -15px 0 0 0;
-    padding: 0;
-    color: $gray-border;
-
-    li::before {
-      content: "#";
-    }
-
-    a {
+    &:hover {
       text-decoration: none;
-      font-size: 0.8rem;
+    }
+  }
+
+  .entry-category {
+    margin: 0 0 15px 0;
+
+    ul {
+      list-style: none;
+      margin: -15px 0 0 0;
+      padding: 0;
       color: $gray-border;
 
-      &:hover {
-        color: $font-sub;
+      li::before {
+        content: "#";
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: $gray-border;
+
+        &:hover {
+          color: $font-sub;
+        }
       }
     }
   }
@@ -193,5 +208,17 @@
         font-size: 110%;
       }
     }
+  }
+}
+
+.addthis_tool {
+  text-align: right;
+
+  &.at-above-post {
+    margin: 0 0 2rem 0;
+  }
+
+  &.at-below-post {
+    margin: 0 0 2rem 0;
   }
 }
