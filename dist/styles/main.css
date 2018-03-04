@@ -13978,11 +13978,15 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
-  color: #555;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  font-family: 'Noto Sans JP', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', '\30D2\30E9\30AE\30CE\89D2\30B4\30B7\30C3\30AF', YuGothic, 'Yu Gothic', '\30E1\30A4\30EA\30AA', Meiryo, '\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF', 'MS PGothic', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+body.home {
+  background-color: #fff;
 }
 
 html,
@@ -14030,6 +14034,7 @@ a:hover {
 
 h1 {
   color: #000;
+  letter-spacing: 1.8px;
 }
 
 h2,
@@ -14038,18 +14043,24 @@ h4,
 h5,
 h6 {
   color: #222;
+  letter-spacing: 1.8px;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 2.1;
   margin-bottom: 20px;
 }
 
 p code {
-  color: #555;
+  color: #333;
   background-color: #eee;
   padding: 0.1em 0.4em;
   border-radius: 3px;
+}
+
+b,
+strong {
+  font-weight: 600;
 }
 
 .jumbotron {
@@ -14156,7 +14167,7 @@ blockquote {
           box-sizing: border-box;
   font-style: italic;
   color: #464646;
-  background: #f2f2f2;
+  background: #fafafa;
 }
 
 blockquote::before {
@@ -14503,7 +14514,7 @@ header.banner .container-fluid {
 }
 
 .entry-title {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 
 .ul-list,
@@ -14613,6 +14624,10 @@ header.banner .container-fluid {
   color: #666;
 }
 
+.main header time.updated {
+  font-size: 0.8rem;
+}
+
 .main .page-header {
   margin-bottom: 50px;
 }
@@ -14669,7 +14684,7 @@ header.banner .container-fluid {
 
 #toc_container ul a {
   display: block;
-  color: #555;
+  color: #333;
 }
 
 #toc_container ul ul {
@@ -14785,7 +14800,7 @@ body#tinymce {
 .main h1 {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .main h2 {
@@ -14796,12 +14811,12 @@ body#tinymce {
   padding: 0.7em 0.5em;
   border-top: 1px #00081a solid;
   border-bottom: 1px #00081a solid;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .main h3 {
   font-size: 1.2rem;
-  font-weight: bolder;
+  font-weight: 600;
   line-height: 1.2;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -14823,9 +14838,39 @@ body#tinymce {
   border-left: none;
 }
 
+.entry-list a {
+  text-decoration: none;
+}
+
 .entry-list .card {
   border: none;
   border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.entry-list .card img {
+  -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.entry-list .card img:hover {
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+     transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.entry-list .card h5.card-title {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.entry-list .card .card-text time {
+  font-size: 0.7rem;
+  color: #666;
+  letter-spacing: 2px;
 }
 
 
