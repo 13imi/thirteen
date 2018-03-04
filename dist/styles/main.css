@@ -13989,6 +13989,12 @@ body.home {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    font-weight: 400;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -14048,7 +14054,7 @@ h6 {
 
 p {
   line-height: 2.1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 p code {
@@ -14622,6 +14628,10 @@ header.banner .container-fluid {
 
 .entry-content .entry-category ul a:hover {
   color: #666;
+}
+
+.main header {
+  margin-bottom: 20px;
 }
 
 .main header time.updated {
