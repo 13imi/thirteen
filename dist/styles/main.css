@@ -14471,6 +14471,8 @@ header.banner .container-fluid {
 
 .sidebar .widget_categories ul {
   border: none !important;
+  margin-bottom: 1rem;
+  padding: 0 0 0 40px;
 }
 
 .content-info {
