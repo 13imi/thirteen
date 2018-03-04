@@ -1,12 +1,12 @@
 .square_btn {
   display: inline-block;
   background-color: $ac;
-  color: #fff;
+  color: #fff !important;
   font-size: 1em;
   width: 100%;
   text-align: center;
   line-height: 1.7;
-  text-decoration: none;
+  text-decoration: none !important;
   letter-spacing: 0.05em;
   padding: 0.7em 1em;
   border-radius: 3px;
@@ -26,16 +26,16 @@
   padding: 0.7em 1em;
   font-size: 1rem;
   line-height: 1.7;
-  text-decoration: none;
+  text-decoration: none !important;
   width: 100%;
   text-align: center;
-  color: $ac;
+  color: $ac !important;
   border: solid 2px $ac;
   border-radius: 3px;
   transition: 0.4s;
 
   &:hover {
     background: $ac;
-    color: white;
+    color: white !important;
   }
 }

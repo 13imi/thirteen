@@ -14054,7 +14054,6 @@ h6 {
 
 p {
   line-height: 2.1;
-  margin-bottom: 40px;
 }
 
 p code {
@@ -14111,12 +14110,12 @@ hr {
 .square_btn {
   display: inline-block;
   background-color: #ffc107;
-  color: #fff;
+  color: #fff !important;
   font-size: 1em;
   width: 100%;
   text-align: center;
   line-height: 1.7;
-  text-decoration: none;
+  text-decoration: none !important;
   letter-spacing: 0.05em;
   padding: 0.7em 1em;
   border-radius: 3px;
@@ -14140,10 +14139,10 @@ hr {
   padding: 0.7em 1em;
   font-size: 1rem;
   line-height: 1.7;
-  text-decoration: none;
+  text-decoration: none !important;
   width: 100%;
   text-align: center;
-  color: #ffc107;
+  color: #ffc107 !important;
   border: solid 2px #ffc107;
   border-radius: 3px;
   -webkit-transition: 0.4s;
@@ -14153,7 +14152,7 @@ hr {
 
 .line_btn:hover {
   background: #ffc107;
-  color: white;
+  color: white !important;
 }
 
 .comment-list ol {
@@ -14663,6 +14662,10 @@ header.banner .container-fluid {
   color: #0e7ac4;
 }
 
+.main p {
+  margin-bottom: 40px;
+}
+
 .box {
   position: relative;
   margin: 2em 0;
@@ -14719,6 +14722,10 @@ header.banner .container-fluid {
   position: absolute;
   left: 0.5em;
   color: #00081a;
+}
+
+#toc_container .toc_list > li li {
+  margin-bottom: 5px;
 }
 
 #toc_container .toc_list > li > a {

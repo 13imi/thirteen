@@ -149,6 +149,10 @@
   span.blue {
     color: $font-blue;
   }
+
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 .box {
@@ -209,6 +213,10 @@
         position: absolute;
         left: 0.5em;
         color: $main;
+      }
+
+      li {
+        margin-bottom: 5px;
       }
 
       > a {
