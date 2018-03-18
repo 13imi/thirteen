@@ -14568,6 +14568,24 @@ header.banner .container-fluid {
   font-size: 80%;
 }
 
+.content-info .tagcloud a {
+  font-size: 10pt !important;
+  padding: 2px 8px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin: 5px 1px;
+}
+
+.content-info .tagcloud a:hover {
+  background: #fff;
+  color: #00081a;
+}
+
+.content-info .footer1 ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 .entry-title {
   margin: 10px 0 10px 0;
 }
