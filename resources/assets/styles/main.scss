@@ -23,6 +23,7 @@
 @import "components/wp-classes";
 @import "components/fukidashi";
 @import "components/items";
+@import "components/box";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/pages";
@@ -70,6 +71,14 @@
     margin-bottom: 20px;
     padding: 0.3em; /* 文字周りの余白 */
     border-left: solid 5px $main; /* 左線（実線 太さ 色） */
+  }
+
+  .point-ac-box {
+    @include point-box($ac);
+  }
+
+  .point-gray-box {
+    @include point-box($gray-border);
   }
 }
 

@@ -1,0 +1,27 @@
+@mixin point-box($color: $ac) {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 2px $color;
+
+  .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -26px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 14px;
+    background: $color;
+    color: $white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
