@@ -1,0 +1,110 @@
+.kaerebalink-box,
+.booklink-box {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .kaerebalink-image,
+  .booklink-image {
+    float: left;
+    width: 120px;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .kaerebalink-info,
+  .booklink-info {
+    margin: 0 0 0 130px;
+    color: $font-sentense;
+  }
+
+  .kaerebalink-name > a,
+  .booklink-name > a {
+    color: $font-main;
+    text-decoration: none;
+  }
+
+  .kaerebalink-powered-date,
+  .booklink-powered-date {
+    font-size: 0.8rem;
+  }
+
+  .kaerebalink-powered-date a,
+  .booklink-powered-date a {
+    font-size: 12px;
+    color: $font-sentense;
+  }
+
+  .kaerebalink-detail,
+  .booklink-detail {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .kaerebalink-link1,
+  .booklink-link2 {
+    padding: 10px 0;
+
+    > div {
+      width: 50%;
+      float: left;
+      padding: 0 5px;
+    }
+  }
+
+  .kaerebalink-link1 a,
+  .booklink-link2 a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    border: 1px solid $white;
+    font-weight: 500;
+  }
+
+  /* ブランドカラーより少し薄めに */
+  .shoplinkamazon a {
+    @include line_btn($amazon, 1);
+  }
+
+  .shoplinkkindle a {
+    @include line_btn($kindle, 1);
+  }
+
+  .shoplinkrakuten a {
+    @include line_btn($rakuten, 1);
+  }
+
+  .kaerebalink-box p,
+  .booklink-box p {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .kaerebalink-link1 div,
+    .booklink-link2 div {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .booklink-link2 div:nth-of-type(3) {
+      margin-top: 0;
+    }
+  }
+}
