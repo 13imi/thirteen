@@ -92,9 +92,9 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-footer2'
     ] + $config);
     register_sidebar([
-        'name' => __( '投稿タイトル下', 'sage' ),
-        'id' => 'widget-title-under',
-        'before_widget' => '<div class="widget-title-under">',
+        'name' => __( '投稿タイトル上', 'sage' ),
+        'id' => 'widget-title-top',
+        'before_widget' => '<div class="widget-title-top">',
         'after_widget' => '</div>',
         'before_title' => '',
         'after_title' => ''
