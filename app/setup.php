@@ -87,15 +87,42 @@ add_action('widgets_init', function () {
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
-        register_sidebar([
+    register_sidebar([
         'name'          => __('Footer2', 'sage'),
         'id'            => 'sidebar-footer2'
     ] + $config);
     register_sidebar([
-        'name'          => __('Footer3', 'sage'),
-        'id'            => 'sidebar-footer3'
+        'name' => __( '投稿タイトル下', 'sage' ),
+        'id' => 'widget-title-under',
+        'before_widget' => '<div class="widget-title-under">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
     ] + $config);
-
+    register_sidebar([
+        'name' => __( '本文見出し上', 'sage' ),
+        'id' => 'widget-in-article',
+        'before_widget' => '<div class="widget-in-article">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ] + $config);
+    register_sidebar([
+        'name' => __( '投稿記事下', 'sage' ),
+        'id' => 'widget-article-bottom',
+        'before_widget' => '<div class="widget-article-bottom">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ] + $config);
+    register_sidebar([
+        'name' => __( '投稿SNS下', 'sage' ),
+        'id' => 'widget-article-bottom-2',
+        'before_widget' => '<div class="widget-article-bottom2">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => '',
+    ] + $config);
 });
 
 /**
