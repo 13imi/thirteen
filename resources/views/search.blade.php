@@ -10,6 +10,12 @@
     {!! get_search_form(false) !!}
   @endif
 
+  <div class="row">
+    @while(have_posts()) @php(the_post())
+      @include('partials.cards')
+    @endwhile
+  </div>
+
   @while(have_posts()) @php(the_post())
     @include('partials.content-search')
   @endwhile
