@@ -1,26 +1,34 @@
 <article @php(post_class())>
-
-              @if(is_active_sidebar( 'widget-title-top' ))
-  <aside>
+  @if (is_active_sidebar( 'widget-title-top' ))
+    <aside>
     @php(dynamic_sidebar('widget-title-top'))
-  </aside>
-              @endif
+    </aside>
+  @endif
 
-              <header>
-                <h1 class="entry-title">{{ get_the_title() }}</h1>
-                @include('partials/entry-meta')
-              </header>
-              <div class="entry-content">
-                @php(the_content())
-              </div>
-              <footer>
-                {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-              </footer>
+  <header>
+    <h1 class="entry-title">{{ get_the_title() }}</h1>
+    @include('partials/entry-meta')
+  </header>
 
-              @if(is_active_sidebar( 'widget-article-bottom' ))
-                <aside>
-                  @php(dynamic_sidebar('widget-article-bottom'))
-                </aside>
-              @endif
+  <div class="entry-content">
+    @php(the_content())
+  </div>
 
+  <footer>
+    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+  </footer>
+
+  @if(wp_is_mobile())
+    @if(is_active_sidebar( 'widget-article-bottom-sp' ))
+      <aside>
+        @php(dynamic_sidebar('widget-article-bottom-sp'))
+      </aside>
+    @endif
+  @else
+    @if(is_active_sidebar( 'widget-article-bottom-pc' ))
+      <aside>
+        @php(dynamic_sidebar('widget-article-bottom-pc'))
+      </aside>
+    @endif
+  @endif
 </article>

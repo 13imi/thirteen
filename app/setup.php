@@ -92,7 +92,7 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-footer2'
     ] + $config);
     register_sidebar([
-        'name' => __( '投稿タイトル上', 'sage' ),
+        'name' => __( '記事タイトル上', 'sage' ),
         'id' => 'widget-title-top',
         'before_widget' => '<div class="widget-title-top">',
         'after_widget' => '</div>',
@@ -100,7 +100,7 @@ add_action('widgets_init', function () {
         'after_title' => ''
     ] + $config);
     register_sidebar([
-        'name' => __( '本文見出し上', 'sage' ),
+        'name' => __( '記事中広告（1番目h2上）', 'sage' ),
         'id' => 'widget-in-article',
         'before_widget' => '<div class="widget-in-article">',
         'after_widget' => '</div>',
@@ -108,15 +108,23 @@ add_action('widgets_init', function () {
         'after_title' => ''
     ] + $config);
     register_sidebar([
-        'name' => __( '投稿記事下', 'sage' ),
-        'id' => 'widget-article-bottom',
-        'before_widget' => '<div class="widget-article-bottom">',
+        'name' => __( '記事下広告（PC）', 'sage' ),
+        'id' => 'widget-article-bottom-pc',
+        'before_widget' => '<div class="widget-article-bottom--pc">',
         'after_widget' => '</div>',
         'before_title' => '',
         'after_title' => ''
     ] + $config);
     register_sidebar([
-        'name' => __( '投稿SNS下', 'sage' ),
+        'name' => __( '記事下広告（モバイル）', 'sage' ),
+        'id' => 'widget-article-bottom-sp',
+        'before_widget' => '<div class="widget-article-bottom--sp">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ] + $config);
+    register_sidebar([
+        'name' => __( '記事SNS下', 'sage' ),
         'id' => 'widget-article-bottom-2',
         'before_widget' => '<div class="widget-article-bottom2">',
         'after_widget' => '</div>',
