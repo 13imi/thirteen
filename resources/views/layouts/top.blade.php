@@ -23,6 +23,9 @@
 
           <main class="main col-md-12">
             @yield('content')
+            <div class="pagination-area">
+              <?php wp_pagination(); ?>
+            </div>
           </main>
         </div>
       </div>

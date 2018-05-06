@@ -117,3 +117,29 @@ function add_widget_before_1st_h2($the_content) {
 }
 
 add_filter('the_content','add_widget_before_1st_h2');
+
+function wp_pagination() {
+	global $wp_query;
+	$big = 99999999;
+	$page_format = paginate_links( array(
+		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $wp_query->max_num_pages,
+		'type'  => 'array',
+        'prev_text' => ('«'),
+		'next_text' => ('»')
+	) );
+	if( is_array($page_format) ) {
+		$paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+
+		echo '<nav aria-label="Page navigation example"><ul class="pagination justify-content-center">';
+
+		foreach ( $page_format as $page ) {
+            $active = ( strpos($page, 'current') ) ? 'active' : '';
+    		echo '<li class="page-item ' . $active . '">' . str_replace( 'page-numbers', 'page-link', $page ) . '</li>';
+		}
+			echo '</ul></div>';
+	}
+	wp_reset_query();
+}

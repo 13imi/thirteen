@@ -1,0 +1,19 @@
+.page-link {
+  color: $font-sentense;
+
+  &:hover {
+    color: $font-sentense;
+  }
+
+  &:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem $gray-shadow;
+    box-shadow: 0 0 0 0.2rem $gray-shadow;
+  }
+}
+
+.page-item.active {
+  .page-link {
+    background-color: $gray-border;
+    border-color: $gray-border;
+  }
+}
