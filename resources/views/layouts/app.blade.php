@@ -38,5 +38,6 @@
     @php(do_action('get_footer'))
     @include('partials.footer')
     @php(wp_footer())
+    @include('partials.footer-custom-field')
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 @section('content')
   @unless(is_paged())
-    @php(query_posts('tag=特集&showposts=4'))
+    @php(query_posts('tag=特集&showposts=6'))
     @if(have_posts())
       <div class="entry-list">
         <h3 class="section-title">特集記事</h3>
