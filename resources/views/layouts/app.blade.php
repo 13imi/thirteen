@@ -24,6 +24,9 @@
           <main class="main col-md-8">
             <div class="col-card">
               @yield('content')
+              <div class="pagination-area">
+                <?php wp_pagination(); ?>
+              </div>
             </div>
           </main>
           @if (App\display_sidebar())
