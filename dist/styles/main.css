@@ -14115,7 +14115,7 @@ hr {
 
 .square_btn {
   display: inline-block;
-  background-color: #efb794;
+  background-color: #da6821;
   color: #fff !important;
   font-size: 1em;
   width: 100%;
@@ -14148,8 +14148,8 @@ hr {
   text-decoration: none !important;
   width: 100%;
   text-align: center;
-  color: #efb794 !important;
-  border: solid 2px #efb794;
+  color: #da6821 !important;
+  border: solid 2px #da6821;
   border-radius: 3px;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -14157,7 +14157,7 @@ hr {
 }
 
 .line_btn:hover {
-  background: #efb794;
+  background: #da6821;
   color: white !important;
 }
 
@@ -15045,7 +15045,7 @@ header.site-header .logo img {
   position: relative;
   margin: 2em 0;
   padding: 25px 10px 7px;
-  border: solid 2px #efb794;
+  border: solid 2px #da6821;
   border-radius: 3px;
 }
 
@@ -15059,7 +15059,7 @@ header.site-header .logo img {
   line-height: 25px;
   vertical-align: middle;
   font-size: 14px;
-  background: #efb794;
+  background: #da6821;
   color: #fff;
   font-weight: bold;
   border-radius: 3px;
@@ -15302,7 +15302,7 @@ body#tinymce {
   position: relative;
   margin: 2em 0;
   padding: 0.5em 1em;
-  border: solid 2px #efb794;
+  border: solid 2px #da6821;
 }
 
 .main .point-ac-box .box-title {
@@ -15315,7 +15315,7 @@ body#tinymce {
   line-height: 25px;
   vertical-align: middle;
   font-size: 14px;
-  background: #efb794;
+  background: #da6821;
   color: #fff;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
@@ -15403,10 +15403,10 @@ body#tinymce {
 
 mark,
 .mark {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #f9e3aa));
-  background: -webkit-linear-gradient(transparent 70%, #f9e3aa 70%);
-  background: -o-linear-gradient(transparent 70%, #f9e3aa 70%);
-  background: linear-gradient(transparent 70%, #f9e3aa 70%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #f6d5c0));
+  background: -webkit-linear-gradient(transparent 70%, #f6d5c0 70%);
+  background: -o-linear-gradient(transparent 70%, #f6d5c0 70%);
+  background: linear-gradient(transparent 70%, #f6d5c0 70%);
 }
 
 
