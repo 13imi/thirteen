@@ -74,6 +74,26 @@
     border-left: solid 5px $main; /* 左線（実線 太さ 色） */
   }
 
+  h4 {
+    position: relative;
+    padding: 0.6em;
+    background: #e5e5e5;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  h4::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e5e5e5;
+    width: 0;
+    height: 0;
+  }
+
   .point-ac-box {
     @include point-box($ac);
   }
@@ -127,4 +147,9 @@
       letter-spacing: 2px;
     }
   }
+}
+
+mark,
+.mark {
+  background: linear-gradient(transparent 70%, $ac2 70%);
 }

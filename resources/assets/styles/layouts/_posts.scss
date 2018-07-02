@@ -72,6 +72,51 @@
   }
 }
 
+.post-list {
+  ul {
+    border: solid 2px $gray-border;
+    padding: 0.5em;
+    position: relative;
+    margin-top: 2em;
+
+    li {
+      line-height: 1.4;
+      padding: 0.5em 0 0.5em 1.4em;
+      border-bottom: dashed 1px silver;
+      list-style-type: none !important;
+      font-size: 0.8rem;
+
+      &.active {
+        font-weight: 500;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      &::before {
+        font-family: FontAwesome, sans-serif;
+        content: "\f138";
+        position: absolute;
+        left: 0.5em;
+        color: $gray-border;
+      }
+
+      &::after {
+        background: $gray-border;
+        color: $white;
+        font-weight: bold;
+        position: absolute;
+        left: -2px;
+        bottom: 100%;
+        padding: 1px 7px;
+        content: "講座一覧";
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}
+
 .entry-content {
   a {
     text-decoration: underline;
@@ -80,6 +125,10 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .post-list a {
+    text-decoration: none;
   }
 
   .entry-category {
