@@ -1,16 +1,31 @@
-<header class="banner">
+<!-- <header class="banner">
+     <div class="container-fluid">
+     <div class="row">
+     <div class="col-md-12">
+     <div class="logo">
+     <a class="brand" href="{{ home_url('/') }}">
+     <img src="@asset('images/icon-13.png')">
+     </a>
+     </div>
+     </div>
+     </div>
+     </div>
+     </header>
+   -->
+<header class="site-header">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 no-padding">
         <div class="logo">
           <a class="brand" href="{{ home_url('/') }}">
-            <img src="@asset('images/icon-13.png')">
+            <img src="@asset('images/header.jpg')" />
           </a>
         </div>
       </div>
     </div>
   </div>
 </header>
+
 
 <div class="nav-tabs-wrap">
   <div class="container">

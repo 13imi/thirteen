@@ -106,7 +106,7 @@ strong {
   margin-bottom: 0;
   text-align: center;
   // background-color: $main;
-  background: url(../images/bg0.jpg) center center no-repeat #464646;
+  background: url(../images/header.jpg) center center no-repeat #464646;
   -webkit-background-size: cover;
   background-size: cover;
   background-color: $main;
@@ -138,4 +138,8 @@ strong {
 hr {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.row .no-padding {
+  padding: 0;
 }
