@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #27ae60
+  primary: #0e4ead
 );
 
 $font-zero: #000;
@@ -10,16 +10,17 @@ $font-main: #222;
 $font-sentense: #333;
 $font-sub: #666;
 $font-red: #f26964;
-$font-blue: #0e7ac4;
+$font-blue: #0e4ead;
 
 $main: #00081a;
 $main2: #eee;
 $main3: #00081a;
 $sub: #eee;
 $sub2: #eee;
-$ac: #da6821;
+$ac:  #0e4ead; // $ac: #da6821;
 $ac2: #efb794; /* $ac: #ffc107; */
-$underline: #f6d5c0;
+$ac3:  #d2f4f7;
+$underline: #d2f4f7;
 
 $gray-border: #d3d3d3;
 $gray-shadow: #e5e5e5;
