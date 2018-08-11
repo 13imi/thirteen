@@ -96,6 +96,13 @@
 
   .point-ac-box {
     @include point-box($ac);
+
+    ul {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+      margin-left: -15px;
+      line-height: 1.7rem;
+    }
   }
 
   .point-gray-box {

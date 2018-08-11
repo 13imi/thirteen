@@ -15018,6 +15018,7 @@ header.site-header .logo img {
 
 .main img.alignnone {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .main .width-100 img {
@@ -15322,6 +15323,13 @@ body#tinymce {
 .main .point-ac-box p {
   margin: 0;
   padding: 0;
+}
+
+.main .point-ac-box ul {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-left: -15px;
+  line-height: 1.7rem;
 }
 
 .main .point-gray-box {
