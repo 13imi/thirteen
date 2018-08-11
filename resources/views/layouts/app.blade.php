@@ -2,6 +2,7 @@
 <html @php(language_attributes())>
          @include('partials.head')
   <body @php(body_class())>
+         @include('partials.gtm')
          @php(do_action('get_header'))
          @if(is_front_page())
          @include('partials.header-top')
