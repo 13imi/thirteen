@@ -15378,6 +15378,8 @@ body#tinymce {
   letter-spacing: 2px;
   text-align: center;
   border-left: none;
+  color: #00081a;
+  background: none;
 }
 
 .entry-list a {
