@@ -14400,7 +14400,7 @@ blockquote cite {
 
 .balloon {
   margin: 40px 0;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   position: relative;
 }
 
@@ -14443,7 +14443,7 @@ blockquote cite {
 .balloon-text-right {
   position: relative;
   margin-left: 40px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
   float: left;
@@ -14461,7 +14461,7 @@ blockquote cite {
 }
 
 .balloon p {
-  margin: 0 0 20px !important;
+  margin: 0 0 !important;
 }
 
 .balloon p:last-child {
@@ -15226,8 +15226,8 @@ body#tinymce {
 }
 
 .sidebar .recent-posts-extended .rpwe-block .rpwe-ul .rpwe-li h3 a {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .sidebar .widget_categories ul {
@@ -15265,6 +15265,12 @@ body#tinymce {
   border-top: 1px #00081a solid;
   border-bottom: 1px #00081a solid;
   font-weight: 600;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000046), color-stop(70%, #1cb5e0), to(#1cb5e0));
+  background-image: -webkit-linear-gradient(left, #000046 0%, #1cb5e0 70%, #1cb5e0 100%);
+  background-image: -o-linear-gradient(left, #000046 0%, #1cb5e0 70%, #1cb5e0 100%);
+  background-image: linear-gradient(to right, #000046 0%, #1cb5e0 70%, #1cb5e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main h3 {
@@ -15274,7 +15280,9 @@ body#tinymce {
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 0.4em 0.7em;
-  border-left: solid 5px #00081a;
+  border-left: solid 5px #0e4ead;
+  color: #0e4ead;
+  background: #fafafa;
 }
 
 .main h4 {
@@ -15380,11 +15388,12 @@ body#tinymce {
   border: none;
   border-radius: 0;
   margin-bottom: 20px;
+  padding: 0 12px;
 }
 
 .entry-list .card img {
-  -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .entry-list .card img:hover {
@@ -15396,8 +15405,14 @@ body#tinymce {
   transition: all 0.3s;
 }
 
+.entry-list .card .card-body {
+  padding: 1.25rem 5px;
+}
+
 .entry-list .card h5.card-title {
   font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 0;
   letter-spacing: 2px;
 }
 

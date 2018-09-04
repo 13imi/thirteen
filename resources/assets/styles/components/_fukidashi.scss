@@ -128,7 +128,7 @@
 // New Fukidashi
 .balloon {
   margin: 40px 0;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   position: relative;
 }
 
@@ -171,7 +171,7 @@
 .balloon-text-right {
   position: relative;
   margin-left: 40px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
   float: left;
@@ -189,7 +189,7 @@
 }
 
 .balloon p {
-  margin: 0 0 20px !important;
+  margin: 0 0 !important;
 }
 
 .balloon p:last-child {
